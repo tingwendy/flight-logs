@@ -1,6 +1,8 @@
 // variable in sass
 $navBackground: #708090;
 
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quicksand&display=swap');
+
 // reusable style in sass
 @mixin center-content {
     display: flex;
@@ -17,9 +19,28 @@ body {
         padding: 2vw 5vw;
     }
 
+    background-image: url("../images/EhjP78R-space-star-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        color:whitesmoke;
+        text-align: center;
+        justify-content: center;
+        padding-top: 170px;
+        font-family: "Quicksand", cursive;
+        font-size: 70px;
+        
+    }
+
+    .welcome-text {
+        color: whitesmoke;
+        text-align: center;
+    }
+
     nav {
         @include center-content;
-        background-color: blue;
+        background-color: black;
         position: fixed;
         top: 0;
         width: 90vw;
@@ -62,32 +83,4 @@ body {
         }
     }
 
-    // .form {
-    //     &__create-form {
-    //         @include center-content;
-    //         flex-direction: column;
-    //         border: 1px solid black;
-    //         width: 24vw;
-    //         margin: 0 auto;
-    //         padding: 2vw;
-
-    //         div {
-    //             @include center-content;
-    //             justify-content: space-between;
-    //             flex-direction: column;
-    //             width: 100%;
-    //             margin-bottom: 1vw;
-
-    //             label {
-    //                 display: flex;
-    //                 justify-content: space-between;
-    //                 width: 100%;
-    //                 margin-bottom: 0.5vw;
-    //             }
-    //         }
-    //     }
-
-    //     &__list {
-    //     }
-    // }
 }

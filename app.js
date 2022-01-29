@@ -49,7 +49,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(favicon(path.join(__dirname, "public", "images", "favicon.ico")));
-
+app.use(express.static("public/images"));
 app.use(
     session({
         secret: "This is my secret and no one elses",
@@ -62,7 +62,7 @@ app.use(
 );
 
 // default value for title local
-app.locals.title = "Express - Generated with IronGenerator";
+app.locals.title = "Flight Log - A place to record your flights";
 
 app.use((req, res, next) => {
     app.locals.currentUser = req.session.user ? req.session.user : false;

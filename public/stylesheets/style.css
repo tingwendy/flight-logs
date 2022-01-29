@@ -1,14 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quicksand&display=swap");
 body {
   margin: 0;
-  padding: 3vw 0 0; }
+  padding: 3vw 0 0;
+  background-image: url("../images/EhjP78R-space-star-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
   body #body {
     min-height: 90vh;
     padding: 2vw 5vw; }
+  body h1 {
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    padding-top: 170px;
+    font-family: "Quicksand", cursive;
+    font-size: 70px; }
+  body .welcome-text {
+    color: whitesmoke;
+    text-align: center; }
   body nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: blue;
+    background-color: black;
     position: fixed;
     top: 0;
     width: 90vw;
