@@ -1,0 +1,23 @@
+<h2>this is the pax data page</h2>
+
+<form class='form__create-form' action="/pax/details/{{flightId}}" method="post">
+  <div>
+  <h4>Travel Class:</h4>  
+  <input type="radio" id="travelClassInput" name="travelClass" value="First">
+  <label for="travelClassInput">First</label><br>
+  <input type="radio" id="css" name="travelClass" value="Business">
+  <label for="travelClassInput">Business</label><br>
+  <input type="radio" id="travelClassInput" name="travelClass" value="Premium Economy">
+  <label for="travelClassInput">Premium Economy</label><br>
+  <input type="radio" id="travelClassInput" name="travelClass" value="Economy">
+  <label for="travelClassInput">Economy</label><br>
+<br>
+    <label for="seatNumberInput">Seat Number: <input id="seatNumberInput" type="text" name="seatNumber"></label><br>
+  <br>
+    <label for="notesInput">Notes: <input id="notesInput" type="text" name="notes"></label><br>
+  <br>
+  </div>
+  <br>
+  <button>Save Passenger Data</button>
+</form>
+

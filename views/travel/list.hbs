@@ -1,0 +1,34 @@
+<h2> Your Flight Data </h2>
+{{#if name}}
+<p>the name is: {{name}}</p>
+{{/if}}
+<form method="post" action="/travel/airport">
+<label for="airportFromApi">Airport Search: <input name="airportFromApi" type="text"</label></form>
+<button type="submit">Search</button>
+</br>
+</br>
+<form class='form__create-form' action="/travel/details" method="post">
+  <div>
+    
+    <label for="depatureInput">Departure Airport Code: <input id='departureInput' type="text" name="departureAirport"></label>
+    <label for="arrivalInput">Arrival Airport Code: <input id="arrivalInput" type="text" name="arrivalAirport"></label>
+    <h2>Date and Time </h2>
+    <label for="departureStartDateInput">Departure Date: <input id="departureStartDateInput" type="date"
+        name="departureDate"></label>
+    <label for="arrivalDateInput">Arrival Date: <input id="arrivalDateInput" type="date"
+        name="arrivalDate"></label> <br>
+        <br>
+    <label for="departureTimeInput">Departure Time: <input id="departureTimeInput" type="time"
+        name="departureTime"></label>
+    <label for="arrivalTimeInput">Arrival Time: <input id="arrivalTimeInput" type="time"
+        name="arrivalTime"></label><br>
+        <br>
+    <label for="PNRnput">Passenger Record Number: <input id="PNRInput" type="text"
+        name="PNR"></label><br>
+        <br>
+  </div>
+
+  <button>Continue</button>
+</form>
+<h4>Every flight is unique, please enter outbound and return flights as two separate flight.</h4>
+

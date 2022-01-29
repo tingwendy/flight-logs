@@ -1,0 +1,11 @@
+<h2>Passenger Details</h2>
+
+<div>
+  <h3>Travel Class: {{pax.travelClass}}</h3>
+  <h3>Seat Number: {{pax.seatNumber}}</h3>
+  <h3>Notes: {{pax.notes}}</h3>
+</div>
+
+<button><a href="/pax/update/{{pax._id}}">Edit passenger data</a></button>
+<button><a href="/flight/myflight">Save to my flights</a></button>
+<button><a href="/pax/deletepax/{{flightId}}/{{userId}}/{{pax._id}}">Delete passenger details</a></button>

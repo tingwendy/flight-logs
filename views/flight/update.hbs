@@ -1,0 +1,17 @@
+<h2> flight update page </h2>
+
+<form class='form__create-form' action="/flight/details/{{urlId}}" method="post">
+  <div>
+    
+    <label for="flightNumberInput">Flight Number: <input id='flightNumberInput' type="text" name="flightNumber"></label>
+    <label for="airline">Airline: <input id="airline" type="text" name="airline"></label>
+    <label for="aircraftTypeInput">Aircraft Type: <input id="aircraftTypeInput" type="text"
+        name="aircraftType"></label>
+    <label for="tailNumber">Tail Number: <input id="tailNumber" type="text"
+        name="tailNumber"></label>
+    <label for="flightDuration">Flight Duration: <input id="flightDuration" type="text"
+        name="flightDuration"></label>
+  </div>
+
+  <button>Save Changes</button>
+</form>

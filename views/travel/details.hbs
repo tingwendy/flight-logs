@@ -1,0 +1,13 @@
+<h2> Travel Data Details </h2>
+
+<div>
+  <h3>Departing From: {{travelData.departureAirport}} Arriving At: {{travelData.arrivalAirport}}</h3>
+  <h3>Departure Date: {{travelData.departureDate}} Departure Time: {{travelData.departureTime}}</h3>
+  <h3>Arrival Date: {{travelData.arrivalDate}} Arrival Time: {{travelData.arrivalTime}}</h3>
+  <br>
+
+  <button><a href="/flight/details/{{travelData._id}}">Continue to Flight Details</a></button>
+  <button><a href="/travel/update/{{travelData._id}}">Edit Travel Data</a></button>
+  <button><a href="/travel/delete/{{travelData._id}}">Delete This Travel Data</a></button>
+
+  <br>
