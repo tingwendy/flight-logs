@@ -1,4 +1,5 @@
-<h2> Flight Details </h2>
+<div id="flight-form">
+<h2> Flight and Aircraft Details </h2>
 
 <div>
   <h3>Flight Number: {{flight.flightNumber}}</h3>
@@ -7,8 +8,12 @@
   <h3>Tail Number: {{flight.tailNumber}}</h3>
   <h3>Flight Duration: {{flight.flightDuration}}</h3>
 {{!-- <p>{{flight._id}}/{{urlId}}</p> --}}
-  <button><a href="/pax/data/{{flight._id}}">Continue to Passenger Details</a></button>
-  <button><a href="/flight/update/{{flight._id}}">Edit Flight Data</a></button>
-  <button><a href="/flight/deleteflight/{{urlId}}/{{flight._id}}">Delete This Flight!</a></button>
+  <button style="border-radius: 8px; padding: 5px;"><a href="/flight/update/{{flight._id}}" style="text-decoration: none; font-family:Arial, Helvetica, sans-serif; color:grey">Edit Flight Data</a></button>
+  <button style="border-radius: 8px; padding: 5px;"><a href="/pax/data/{{flight._id}}" style="text-decoration: none; font-family:Arial, Helvetica, sans-serif; color:grey">Continue to Passenger Details</a></button>
+  <br>
+  <br>
+  <button style="border-radius: 8px; padding: 5px;"><a href="/flight/deleteflight/{{urlId}}/{{flight._id}}" style="text-decoration: none; font-family:Arial, Helvetica, sans-serif; color:grey">Delete This Flight</a></button>
 
   <br>
+  </div>
+  

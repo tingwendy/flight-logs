@@ -1,33 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Quicksand&display=swap");
-body {
-  margin: 0;
-  padding: 3vw 0 0;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap");
+.home {
   background-image: url("../images/EhjP78R-space-star-background.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
+body {
+  margin: 0;
+  padding: 3vw 0 0; }
   body #body {
     min-height: 90vh;
     padding: 2vw 5vw; }
+  body .engine-pic {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%; }
   body h1 {
     color: whitesmoke;
     text-align: center;
     justify-content: center;
-    padding-top: 170px;
     font-family: "Quicksand", cursive;
-    font-size: 70px; }
+    font-size: 40px; }
   body .welcome-text {
     color: whitesmoke;
+    font-family: "Quicksand", cursive;
     text-align: center; }
   body nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb 0, 0, 0, 0.7;
     position: fixed;
     top: 0;
     width: 90vw;
-    height: 4vw;
-    padding: 0 5vw; }
+    height: 5vw;
+    padding: 0 5vw;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px; }
     body nav div:nth-child(1) {
       display: flex;
       align-items: center;
@@ -41,11 +52,43 @@ body {
       body nav div:nth-child(2) a {
         margin-left: 1vw; }
     body nav a {
-      color: snow;
+      color: #565656;
       text-decoration: none; }
       body nav a:hover {
-        color: yellow; }
+        color: white; }
     body nav h4 {
-      color: darkslateblue; }
+      color: whitesmoke; }
+  body .signup-form {
+    color: white;
+    font-family: "Quicksand", cursive;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 10px auto; }
+  body .signup-form-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+
+#flight-form {
+  font-family: "Quicksand", cursive;
+  color: whitesmoke;
+  text-align: left;
+  align-items: left;
+  padding: 50px;
+  height: 400px; }
+
+#my-flights {
+  font-family: "Quicksand", cursive;
+  color: whitesmoke;
+  text-align: left;
+  align-items: center;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,20 @@
+<div class="signup-form">
 <form action="/auth/login" method="POST">
-  <label> Username
-    <input type="text" name="username">
+<div class="signup-form-contents">
+  <label style="padding: 10px"> Username:
+    <input type="text" name="username" placeholder="Enter Username Here" style="border-radius: 15px; padding: 8px;">
   </label>
-  <label> Password
-    <input type="password" name="password">
+ </br>
+  <label style="padding: 10px">   Password:
+    <input type="password" name="password" placeholder="Enter Password Here" style="border-radius: 15px; padding: 8px;">
   </label>
-
-  <button type="submit">Submit</button>
+</br>
+  <button type="submit" style="border-radius: 5px; padding: 5px">Submit</button>
 </form>
+</div>
+</div>
 
 {{#if errorMessage}}
 {{errorMessage}}
 {{/if}}
+

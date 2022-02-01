@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home">
 
 <head>
   <meta charset="UTF-8">
@@ -13,8 +13,8 @@
   <nav>
     <div>
       <a href="/">Home</a>
-      <a href="/travel">Travel Data</a>
-      <a href="/flight/myflight">My Flights</a>
+      <nbsp><a href="/travel">New Flight</a>
+      <nbsp><a href="/flight/myflight">My Flights</a>
     </div>
     <div>
       {{#if currentUser}}
@@ -26,6 +26,7 @@
       {{/if}}
     </div>
   </nav>
+ 
   
   <div id="body">
     {{{body}}}

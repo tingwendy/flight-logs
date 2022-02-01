@@ -1,19 +1,26 @@
-<h2>Update page</h2>
+<div id="flight-form">
+<h2>Edit Departure and Arrival Information</h2>
 <form class='form__create-form' action="/travel/details" method="post">
-  <div>
+    <div>
     
-    <label for="depatureInput">Departure code: <input id='departureInput' type="text" name="departureAirport"></label>
-    <label for="arrivalInput">Arrival code: <input id="arrivalInput" type="text" name="arrivalAirport"></label>
+    <label for="depatureInput">Departure Airport Code: <input id='departureInput' type="text" name="departureAirport" style="border-radius: 8px; padding: 5px"></label>
+    <label for="arrivalInput">Arrival Airport Code: <input id="arrivalInput" type="text" name="arrivalAirport" style="border-radius: 8px; padding: 5px"></label>
     <h2>Date and Time </h2>
     <label for="departureStartDateInput">Departure Date: <input id="departureStartDateInput" type="date"
-        name="departureDate"></label>
+        name="departureDate" style="border-radius: 8px; padding: 5px"></label>
     <label for="arrivalDateInput">Arrival Date: <input id="arrivalDateInput" type="date"
-        name="arrivalDate"></label>
+        name="arrivalDate" style="border-radius: 8px; padding: 5px"></label> <br>
+        <br>
     <label for="departureTimeInput">Departure Time: <input id="departureTimeInput" type="time"
-        name="departureTime"></label>
+        name="departureTime" style="border-radius: 8px; padding: 5px"></label>
     <label for="arrivalTimeInput">Arrival Time: <input id="arrivalTimeInput" type="time"
-        name="arrivalTime"></label>
+        name="arrivalTime" style="border-radius: 8px; padding: 5px"></label><br>
+        <br>
+    <label for="PNRnput">Passenger Record Number: <input id="PNRInput" type="text"
+        name="PNR" style="border-radius: 8px; padding: 5px"></label><br>
+        <br>
   </div>
 
-  <button>Save Changes</button>
+  <button style="border-radius: 8px; font-family:Arial, Helvetica, sans-serif">Save Changes</button>
 </form>
+</div>

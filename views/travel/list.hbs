@@ -1,34 +1,37 @@
-<h2> Your Flight Data </h2>
+<html class="flight">
+<div id="flight-form">
+<h2> Add a new flight- Step 1/3 Departure and Arrival Information</h2>
 {{#if name}}
 <p>the name is: {{name}}</p>
 {{/if}}
 <form method="post" action="/travel/airport">
-<label for="airportFromApi">Airport Search: <input name="airportFromApi" type="text"</label></form>
-<button type="submit">Search</button>
+<label for="airportFromApi">Airport Search: <input name="airportFromApi" type="text" style="border-radius: 8px; padding: 5px"</label></form>
+<button type="submit" style="border-radius: 8px; padding: 5px; font-family:Arial, Helvetica, sans-serif; color: grey">Search</button>
 </br>
 </br>
 <form class='form__create-form' action="/travel/details" method="post">
   <div>
     
-    <label for="depatureInput">Departure Airport Code: <input id='departureInput' type="text" name="departureAirport"></label>
-    <label for="arrivalInput">Arrival Airport Code: <input id="arrivalInput" type="text" name="arrivalAirport"></label>
+    <label for="depatureInput">Departure Airport Code: <input id='departureInput' type="text" name="departureAirport" style="border-radius: 8px; padding: 5px"></label>
+    <label for="arrivalInput">Arrival Airport Code: <input id="arrivalInput" type="text" name="arrivalAirport" style="border-radius: 8px; padding: 5px"></label>
     <h2>Date and Time </h2>
     <label for="departureStartDateInput">Departure Date: <input id="departureStartDateInput" type="date"
-        name="departureDate"></label>
+        name="departureDate" style="border-radius: 8px; padding: 5px"></label>
     <label for="arrivalDateInput">Arrival Date: <input id="arrivalDateInput" type="date"
-        name="arrivalDate"></label> <br>
+        name="arrivalDate" style="border-radius: 8px; padding: 5px"></label> <br>
         <br>
     <label for="departureTimeInput">Departure Time: <input id="departureTimeInput" type="time"
-        name="departureTime"></label>
+        name="departureTime" style="border-radius: 8px; padding: 5px"></label>
     <label for="arrivalTimeInput">Arrival Time: <input id="arrivalTimeInput" type="time"
-        name="arrivalTime"></label><br>
+        name="arrivalTime" style="border-radius: 8px; padding: 5px"></label><br>
         <br>
     <label for="PNRnput">Passenger Record Number: <input id="PNRInput" type="text"
-        name="PNR"></label><br>
+        name="PNR" style="border-radius: 8px; padding: 5px"></label><br>
         <br>
   </div>
 
-  <button>Continue</button>
+  <button style="border-radius: 8px; padding: 5px; font-family:Arial, Helvetica, sans-serif; text-decoration: none; color:grey">Continue</button>
 </form>
 <h4>Every flight is unique, please enter outbound and return flights as two separate flight.</h4>
-
+</div>
+</html>

@@ -1,6 +1,6 @@
-<h2> pax update page</h2>
+<div id="flight-form">
+<h2>Edit Passenger Information</h2>
 <form class='form__create-form' action="/pax/update/{{pax._id}}" method="post">
-<p>{{pax._id}}</p>
   <div>
   <h4>Travel Class:</h4>  
   <input type="radio" id="travelClassInput" name="travelClass" value="First">
@@ -12,11 +12,12 @@
   <input type="radio" id="travelClassInput" name="travelClass" value="Economy">
   <label for="travelClassInput">Economy</label><br>
 <br>
-    <label for="seatNumberInput">Seat Number: <input id="seatNumberInput" type="text" name="seatNumber"></label><br>
+    <label for="seatNumberInput">Seat Number: <input id="seatNumberInput" type="text" name="seatNumber" style="border-radius: 8px; padding: 5px"></label><br>
   <br>
-    <label for="notesInput">Notes: <input id="notesInput" type="text" name="notes"></label><br>
+    <label for="notesInput">Notes: <input id="notesInput" type="text" name="notes" style="border-radius: 8px; padding: 5px"></label><br>
   <br>
   </div>
   <br>
-  <button>Save Changes</button>
+  <button style="border-radius: 8px; padding: 5px; font-family:Arial, Helvetica, sans-serif; text-decoration: none; color:grey">Save Changes</button>
 </form>
+</div>

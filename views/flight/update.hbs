@@ -1,17 +1,25 @@
-<h2> flight update page </h2>
+<div id="flight-form">
+<h2> Edit Flight and Aircraft Information  </h2>
 
 <form class='form__create-form' action="/flight/details/{{urlId}}" method="post">
-  <div>
+ <div>
     
-    <label for="flightNumberInput">Flight Number: <input id='flightNumberInput' type="text" name="flightNumber"></label>
-    <label for="airline">Airline: <input id="airline" type="text" name="airline"></label>
-    <label for="aircraftTypeInput">Aircraft Type: <input id="aircraftTypeInput" type="text"
-        name="aircraftType"></label>
-    <label for="tailNumber">Tail Number: <input id="tailNumber" type="text"
-        name="tailNumber"></label>
-    <label for="flightDuration">Flight Duration: <input id="flightDuration" type="text"
-        name="flightDuration"></label>
+    <label for="flightNumberInput">Flight Number: <input id='flightNumberInput' type="text" name="flightNumber" style="border-radius: 8px; padding: 5px"></label>
+    <br>
+    <br>
+    <label for="airline">Airline: <input id="airline" type="text" name="airline" style="border-radius: 8px; padding: 5px"></label>
+    <br>
+    <br>
+    <label for="aircraftTypeInput">Aircraft Type: <input id="aircraftTypeInput" type="text" name="aircraftType" style="border-radius: 8px; padding: 5px"></label>
+    <br>
+    <br>
+    <label for="tailNumber">Tail Number: <input id="tailNumber" type="text" name="tailNumber" style="border-radius: 8px; padding: 5px"></label>
+    <br>
+    <br>
+    <label for="flightDuration">Flight Duration: <input id="flightDuration" type="text" name="flightDuration" style="border-radius: 8px; padding: 5px"></label>
   </div>
+<br>
 
-  <button>Save Changes</button>
+  <button style="border-radius: 8px; padding: 5px; color: grey">Save Changes</button>
 </form>
+</div>

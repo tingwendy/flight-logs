@@ -1,3 +1,4 @@
+<div id="my-flights">
 <h2>My Flights</h2>
 
 <h2>{{currentUser.username}} Flights</h2>
@@ -8,8 +9,11 @@
   {{#if departureAirport}}
   <p>{{departureAirport}} to {{arrivalAirport}}</p>
   <p>{{departureDate}} to {{arrivalDate}}</p>
-  <a href="/travel/details/{{_id}}">Edit</a>
-  <a href="/flight/deletetraveldata/{{_id}}">Delete</a>
+  
+  <a href="/travel/details/{{_id}}" style="text-decoration: none; font-family:Arial, Helvetica, sans-serif; color:grey">Edit</a>
+  <br>
+  <br>
+  <a href="/flight/deletetraveldata/{{_id}}" style="text-decoration: none; font-family:Arial, Helvetica, sans-serif; color:grey">Delete</a>
 
   {{/if}}
   {{/each}}
@@ -17,4 +21,5 @@
   {{else}}
   <h3>You have no flights entered</h3>
   {{/if}}
+</div>
 </div>
